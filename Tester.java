@@ -1,6 +1,7 @@
 import java.util.Arrays;
-
+// This class tests the merge sort method using month names
 public class Tester {
+    // Returns true if the sorting method works correctly
     public static boolean testMergeSort() {
         String[] input = {"March", "January", "December"};
         String[] expected = {"December", "January", "March"};
