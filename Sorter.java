@@ -1,4 +1,6 @@
+// This class contains the sorting method using merge sort
 public class Sorter {
+    // Recursively sorts an array of strings using merge sort
     public static String[] mergeSort(String[] months, int left, int right) {
         if (left >= right) {
             return new String[] { months[left] };
@@ -11,7 +13,7 @@ public class Sorter {
 
         return merge(leftArray, rightArray);
     }
-
+    // Merges two sorted arrays into one sorted array
     private static String[] merge(String[] left, String[] right) {
         String[] result = new String[left.length + right.length];
         int leftPointer = 0, rightPointer = 0, resultPointer = 0;
